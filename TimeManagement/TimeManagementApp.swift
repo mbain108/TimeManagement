@@ -1,20 +1,20 @@
 //
 //  TimeManagementApp.swift
-//  TimeManagement
+//  Rae Time Management
 //
-//  Created by Melissa Bain on 7/20/21.
+//  Created by Melissa Bain on 8/2/21.
+//  Copyright © 2021 MB Consulting. All rights reserved.
 //
 
 import SwiftUI
 
 @main
 struct TimeManagementApp: App {
-    let persistenceController = PersistenceController.shared
-
+    let locationManager = LocationManager()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            AppTabView().environmentObject(locationManager)
         }
     }
 }

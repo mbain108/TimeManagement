@@ -8,13 +8,42 @@
 
 /* Begin PBXBuildFile section */
 		1B1706E526A71D8F00BAFCD0 /* TimeManagementApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1706E426A71D8F00BAFCD0 /* TimeManagementApp.swift */; };
-		1B1706E726A71D8F00BAFCD0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1706E626A71D8F00BAFCD0 /* ContentView.swift */; };
 		1B1706E926A71D8F00BAFCD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B1706E826A71D8F00BAFCD0 /* Assets.xcassets */; };
 		1B1706EC26A71D8F00BAFCD0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B1706EB26A71D8F00BAFCD0 /* Preview Assets.xcassets */; };
 		1B1706EE26A71D8F00BAFCD0 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1706ED26A71D8F00BAFCD0 /* Persistence.swift */; };
 		1B1706F126A71D8F00BAFCD0 /* TimeManagement.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1B1706EF26A71D8F00BAFCD0 /* TimeManagement.xcdatamodeld */; };
 		1B1706FB26A71D9000BAFCD0 /* TimeManagementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1706FA26A71D9000BAFCD0 /* TimeManagementTests.swift */; };
 		1B17070526A71D9000BAFCD0 /* TimeManagementUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B17070426A71D9000BAFCD0 /* TimeManagementUITests.swift */; };
+		1B26C16B26B972F700686F77 /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B26C16A26B972F700686F77 /* LocationCell.swift */; };
+		1B26C18826BAC45200686F77 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B26C18726BAC45200686F77 /* ProfileViewModel.swift */; };
+		1B26C18C26BAC4D200686F77 /* OnboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B26C18B26BAC4D200686F77 /* OnboardView.swift */; };
+		1B26C18E26BAC52100686F77 /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B26C18D26BAC52100686F77 /* View+Ext.swift */; };
+		1B276F9526B7291C000DE2DA /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B276F9426B7291C000DE2DA /* CloudKit.framework */; };
+		1B276F9726B72BC3000DE2DA /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B276F9626B72BC3000DE2DA /* Color+Ext.swift */; };
+		1B276F9926B72C19000DE2DA /* AppTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B276F9826B72C19000DE2DA /* AppTabView.swift */; };
+		1B276F9B26B72C58000DE2DA /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B276F9A26B72C58000DE2DA /* ProfileView.swift */; };
+		1B276F9D26B72C7A000DE2DA /* ActivityForTheDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B276F9C26B72C7A000DE2DA /* ActivityForTheDayView.swift */; };
+		1B276F9F26B72CC0000DE2DA /* LocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B276F9E26B72CC0000DE2DA /* LocationDetailView.swift */; };
+		1B276FA126B74552000DE2DA /* LocationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B276FA026B74552000DE2DA /* LocationListView.swift */; };
+		1B276FA326B766C6000DE2DA /* raeMoon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B276FA226B766C6000DE2DA /* raeMoon.swift */; };
+		1B276FA526B76D7B000DE2DA /* raeProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B276FA426B76D7B000DE2DA /* raeProfile.swift */; };
+		1B2AE8AD26B8214E00678DC3 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2AE8AC26B8214E00678DC3 /* MockData.swift */; };
+		1B2AE93A26B893E800678DC3 /* CloudKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2AE93926B893E800678DC3 /* CloudKitManager.swift */; };
+		1B2AE93C26B894C600678DC3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2AE93B26B894C600678DC3 /* Constants.swift */; };
+		1B2AE93E26B898C400678DC3 /* CKRecord+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2AE93D26B898C400678DC3 /* CKRecord+Ext.swift */; };
+		1B2AE94026B89BDF00678DC3 /* AlertItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2AE93F26B89BDF00678DC3 /* AlertItem.swift */; };
+		1B2AE94326B8A40B00678DC3 /* ActivityForTheDayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2AE94226B8A40B00678DC3 /* ActivityForTheDayViewModel.swift */; };
+		1B2AE94626B8ACC100678DC3 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B2AE94526B8ACC100678DC3 /* LocationManager.swift */; };
+		1BC339C726BADF1D0015D827 /* CKAsset+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC339C626BADF1D0015D827 /* CKAsset+Ext.swift */; };
+		1BC339C926BADF370015D827 /* UIImage+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC339C826BADF370015D827 /* UIImage+Ext.swift */; };
+		1BC339CB26BADF810015D827 /* raeLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC339CA26BADF810015D827 /* raeLocation.swift */; };
+		1BC339CD26BADFB70015D827 /* CustomModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC339CC26BADFB70015D827 /* CustomModifiers.swift */; };
+		1BC339D126BAE0270015D827 /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC339D026BAE0270015D827 /* PhotoPicker.swift */; };
+		1BC339D426BAE0540015D827 /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC339D326BAE0540015D827 /* AvatarView.swift */; };
+		1BC339D626BAE0730015D827 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC339D526BAE0730015D827 /* LogoView.swift */; };
+		1BC339D826BAE0880015D827 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC339D726BAE0880015D827 /* LoadingView.swift */; };
+		1BC339DA26BAE0B90015D827 /* XDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC339D926BAE0B90015D827 /* XDismissButton.swift */; };
+		1BC339DC26BAE0ED0015D827 /* raeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC339DB26BAE0ED0015D827 /* raeButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +66,6 @@
 /* Begin PBXFileReference section */
 		1B1706E126A71D8F00BAFCD0 /* TimeManagement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeManagement.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B1706E426A71D8F00BAFCD0 /* TimeManagementApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeManagementApp.swift; sourceTree = "<group>"; };
-		1B1706E626A71D8F00BAFCD0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1B1706E826A71D8F00BAFCD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B1706EB26A71D8F00BAFCD0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1B1706ED26A71D8F00BAFCD0 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -46,6 +74,37 @@
 		1B1706FA26A71D9000BAFCD0 /* TimeManagementTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeManagementTests.swift; sourceTree = "<group>"; };
 		1B17070026A71D9000BAFCD0 /* TimeManagementUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeManagementUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B17070426A71D9000BAFCD0 /* TimeManagementUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeManagementUITests.swift; sourceTree = "<group>"; };
+		1B26C16A26B972F700686F77 /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
+		1B26C18726BAC45200686F77 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		1B26C18B26BAC4D200686F77 /* OnboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardView.swift; sourceTree = "<group>"; };
+		1B26C18D26BAC52100686F77 /* View+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
+		1B276F9226B72909000DE2DA /* TimeManagement.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TimeManagement.entitlements; sourceTree = "<group>"; };
+		1B276F9426B7291C000DE2DA /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		1B276F9626B72BC3000DE2DA /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
+		1B276F9826B72C19000DE2DA /* AppTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabView.swift; sourceTree = "<group>"; };
+		1B276F9A26B72C58000DE2DA /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		1B276F9C26B72C7A000DE2DA /* ActivityForTheDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityForTheDayView.swift; sourceTree = "<group>"; };
+		1B276F9E26B72CC0000DE2DA /* LocationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailView.swift; sourceTree = "<group>"; };
+		1B276FA026B74552000DE2DA /* LocationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListView.swift; sourceTree = "<group>"; };
+		1B276FA226B766C6000DE2DA /* raeMoon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = raeMoon.swift; sourceTree = "<group>"; };
+		1B276FA426B76D7B000DE2DA /* raeProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = raeProfile.swift; sourceTree = "<group>"; };
+		1B2AE8AC26B8214E00678DC3 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		1B2AE93926B893E800678DC3 /* CloudKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitManager.swift; sourceTree = "<group>"; };
+		1B2AE93B26B894C600678DC3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1B2AE93D26B898C400678DC3 /* CKRecord+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CKRecord+Ext.swift"; sourceTree = "<group>"; };
+		1B2AE93F26B89BDF00678DC3 /* AlertItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertItem.swift; sourceTree = "<group>"; };
+		1B2AE94226B8A40B00678DC3 /* ActivityForTheDayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityForTheDayViewModel.swift; sourceTree = "<group>"; };
+		1B2AE94526B8ACC100678DC3 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		1BC339C626BADF1D0015D827 /* CKAsset+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CKAsset+Ext.swift"; sourceTree = "<group>"; };
+		1BC339C826BADF370015D827 /* UIImage+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Ext.swift"; sourceTree = "<group>"; };
+		1BC339CA26BADF810015D827 /* raeLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = raeLocation.swift; sourceTree = "<group>"; };
+		1BC339CC26BADFB70015D827 /* CustomModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModifiers.swift; sourceTree = "<group>"; };
+		1BC339D026BAE0270015D827 /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
+		1BC339D326BAE0540015D827 /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
+		1BC339D526BAE0730015D827 /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
+		1BC339D726BAE0880015D827 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		1BC339D926BAE0B90015D827 /* XDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDismissButton.swift; sourceTree = "<group>"; };
+		1BC339DB26BAE0ED0015D827 /* raeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = raeButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B276F9526B7291C000DE2DA /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +140,7 @@
 				1B1706F926A71D9000BAFCD0 /* TimeManagementTests */,
 				1B17070326A71D9000BAFCD0 /* TimeManagementUITests */,
 				1B1706E226A71D8F00BAFCD0 /* Products */,
+				1B276F9326B7291C000DE2DA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,8 +157,11 @@
 		1B1706E326A71D8F00BAFCD0 /* TimeManagement */ = {
 			isa = PBXGroup;
 			children = (
+				1B2AE93826B893B500678DC3 /* Utilities */,
+				1B2AE8AE26B829BE00678DC3 /* Model */,
+				1B2AE8B026B82A3100678DC3 /* Views */,
+				1B276F9226B72909000DE2DA /* TimeManagement.entitlements */,
 				1B1706E426A71D8F00BAFCD0 /* TimeManagementApp.swift */,
-				1B1706E626A71D8F00BAFCD0 /* ContentView.swift */,
 				1B1706E826A71D8F00BAFCD0 /* Assets.xcassets */,
 				1B1706ED26A71D8F00BAFCD0 /* Persistence.swift */,
 				1B1706EF26A71D8F00BAFCD0 /* TimeManagement.xcdatamodeld */,
@@ -128,6 +192,136 @@
 				1B17070426A71D9000BAFCD0 /* TimeManagementUITests.swift */,
 			);
 			path = TimeManagementUITests;
+			sourceTree = "<group>";
+		};
+		1B26C18626BAC43400686F77 /* ProfileVIew */ = {
+			isa = PBXGroup;
+			children = (
+				1B26C18726BAC45200686F77 /* ProfileViewModel.swift */,
+				1B276F9A26B72C58000DE2DA /* ProfileView.swift */,
+			);
+			path = ProfileVIew;
+			sourceTree = "<group>";
+		};
+		1B276F9326B7291C000DE2DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B276F9426B7291C000DE2DA /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1B2AE8AE26B829BE00678DC3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1BC339CA26BADF810015D827 /* raeLocation.swift */,
+				1B276FA226B766C6000DE2DA /* raeMoon.swift */,
+				1B276FA426B76D7B000DE2DA /* raeProfile.swift */,
+				1B2AE8AC26B8214E00678DC3 /* MockData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1B2AE8AF26B82A0000678DC3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1B276F9626B72BC3000DE2DA /* Color+Ext.swift */,
+				1B2AE93D26B898C400678DC3 /* CKRecord+Ext.swift */,
+				1B26C18D26BAC52100686F77 /* View+Ext.swift */,
+				1BC339C626BADF1D0015D827 /* CKAsset+Ext.swift */,
+				1BC339C826BADF370015D827 /* UIImage+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1B2AE8B026B82A3100678DC3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1BC339CC26BADFB70015D827 /* CustomModifiers.swift */,
+				1BC339CE26BAE0010015D827 /* CustomViews */,
+				1BC339DD26BAE11A0015D827 /* Cells */,
+				1BC339DE26BAE17D0015D827 /* Screens */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1B2AE93826B893B500678DC3 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				1B2AE94426B8ACA000678DC3 /* Managers */,
+				1B2AE8AF26B82A0000678DC3 /* Extensions */,
+				1B2AE93B26B894C600678DC3 /* Constants.swift */,
+				1B2AE93F26B89BDF00678DC3 /* AlertItem.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		1B2AE94126B8A3B800678DC3 /* LocationMapView */ = {
+			isa = PBXGroup;
+			children = (
+				1B2AE94226B8A40B00678DC3 /* ActivityForTheDayViewModel.swift */,
+				1B276F9C26B72C7A000DE2DA /* ActivityForTheDayView.swift */,
+			);
+			path = LocationMapView;
+			sourceTree = "<group>";
+		};
+		1B2AE94426B8ACA000678DC3 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				1B2AE93926B893E800678DC3 /* CloudKitManager.swift */,
+				1B2AE94526B8ACC100678DC3 /* LocationManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		1BC339CE26BAE0010015D827 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				1BC339CF26BAE0180015D827 /* UIKit Components */,
+				1BC339D226BAE03F0015D827 /* Buttons */,
+				1BC339D326BAE0540015D827 /* AvatarView.swift */,
+				1BC339D526BAE0730015D827 /* LogoView.swift */,
+				1BC339D726BAE0880015D827 /* LoadingView.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		1BC339CF26BAE0180015D827 /* UIKit Components */ = {
+			isa = PBXGroup;
+			children = (
+				1BC339D026BAE0270015D827 /* PhotoPicker.swift */,
+			);
+			path = "UIKit Components";
+			sourceTree = "<group>";
+		};
+		1BC339D226BAE03F0015D827 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				1BC339D926BAE0B90015D827 /* XDismissButton.swift */,
+				1BC339DB26BAE0ED0015D827 /* raeButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		1BC339DD26BAE11A0015D827 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1B26C16A26B972F700686F77 /* LocationCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		1BC339DE26BAE17D0015D827 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				1B276F9826B72C19000DE2DA /* AppTabView.swift */,
+				1B276FA026B74552000DE2DA /* LocationListView.swift */,
+				1B276F9E26B72CC0000DE2DA /* LocationDetailView.swift */,
+				1B26C18B26BAC4D200686F77 /* OnboardView.swift */,
+				1B2AE94126B8A3B800678DC3 /* LocationMapView */,
+				1B26C18626BAC43400686F77 /* ProfileVIew */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +389,7 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1300;
+				ORGANIZATIONNAME = "MB Consulting";
 				TargetAttributes = {
 					1B1706E026A71D8E00BAFCD0 = {
 						CreatedOnToolsVersion = 13.0;
@@ -260,10 +455,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B276F9926B72C19000DE2DA /* AppTabView.swift in Sources */,
+				1B2AE94026B89BDF00678DC3 /* AlertItem.swift in Sources */,
+				1B26C18C26BAC4D200686F77 /* OnboardView.swift in Sources */,
+				1B2AE8AD26B8214E00678DC3 /* MockData.swift in Sources */,
 				1B1706EE26A71D8F00BAFCD0 /* Persistence.swift in Sources */,
-				1B1706E726A71D8F00BAFCD0 /* ContentView.swift in Sources */,
+				1BC339DA26BAE0B90015D827 /* XDismissButton.swift in Sources */,
+				1B276F9D26B72C7A000DE2DA /* ActivityForTheDayView.swift in Sources */,
 				1B1706E526A71D8F00BAFCD0 /* TimeManagementApp.swift in Sources */,
+				1BC339CB26BADF810015D827 /* raeLocation.swift in Sources */,
+				1B276FA126B74552000DE2DA /* LocationListView.swift in Sources */,
+				1B2AE94326B8A40B00678DC3 /* ActivityForTheDayViewModel.swift in Sources */,
+				1BC339C926BADF370015D827 /* UIImage+Ext.swift in Sources */,
+				1B276FA326B766C6000DE2DA /* raeMoon.swift in Sources */,
+				1B276F9F26B72CC0000DE2DA /* LocationDetailView.swift in Sources */,
 				1B1706F126A71D8F00BAFCD0 /* TimeManagement.xcdatamodeld in Sources */,
+				1B276F9B26B72C58000DE2DA /* ProfileView.swift in Sources */,
+				1B276FA526B76D7B000DE2DA /* raeProfile.swift in Sources */,
+				1B2AE93C26B894C600678DC3 /* Constants.swift in Sources */,
+				1B26C18826BAC45200686F77 /* ProfileViewModel.swift in Sources */,
+				1BC339D626BAE0730015D827 /* LogoView.swift in Sources */,
+				1B2AE94626B8ACC100678DC3 /* LocationManager.swift in Sources */,
+				1B26C16B26B972F700686F77 /* LocationCell.swift in Sources */,
+				1BC339D126BAE0270015D827 /* PhotoPicker.swift in Sources */,
+				1B26C18E26BAC52100686F77 /* View+Ext.swift in Sources */,
+				1BC339D826BAE0880015D827 /* LoadingView.swift in Sources */,
+				1BC339CD26BADFB70015D827 /* CustomModifiers.swift in Sources */,
+				1B276F9726B72BC3000DE2DA /* Color+Ext.swift in Sources */,
+				1B2AE93A26B893E800678DC3 /* CloudKitManager.swift in Sources */,
+				1B2AE93E26B898C400678DC3 /* CKRecord+Ext.swift in Sources */,
+				1BC339D426BAE0540015D827 /* AvatarView.swift in Sources */,
+				1BC339DC26BAE0ED0015D827 /* raeButton.swift in Sources */,
+				1BC339C726BADF1D0015D827 /* CKAsset+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +643,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TimeManagement/TimeManagement.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TimeManagement/Preview Content\"";
@@ -431,7 +655,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,6 +674,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = TimeManagement/TimeManagement.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TimeManagement/Preview Content\"";
@@ -461,7 +686,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -484,7 +709,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JZ9G56K487;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -509,7 +734,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JZ9G56K487;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
