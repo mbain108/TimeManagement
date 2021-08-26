@@ -256,13 +256,13 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
-		1B2AE94126B8A3B800678DC3 /* LocationMapView */ = {
+		1B2AE94126B8A3B800678DC3 /* ActivityForTheDayView */ = {
 			isa = PBXGroup;
 			children = (
 				1B2AE94226B8A40B00678DC3 /* ActivityForTheDayViewModel.swift */,
 				1B276F9C26B72C7A000DE2DA /* ActivityForTheDayView.swift */,
 			);
-			path = LocationMapView;
+			path = ActivityForTheDayView;
 			sourceTree = "<group>";
 		};
 		1B2AE94426B8ACA000678DC3 /* Managers */ = {
@@ -318,7 +318,7 @@
 				1B276FA026B74552000DE2DA /* LocationListView.swift */,
 				1B276F9E26B72CC0000DE2DA /* LocationDetailView.swift */,
 				1B26C18B26BAC4D200686F77 /* OnboardView.swift */,
-				1B2AE94126B8A3B800678DC3 /* LocationMapView */,
+				1B2AE94126B8A3B800678DC3 /* ActivityForTheDayView */,
 				1B26C18626BAC43400686F77 /* ProfileVIew */,
 			);
 			path = Screens;

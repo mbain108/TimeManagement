@@ -25,6 +25,14 @@ struct ActivityForTheDayView: View {
                 LogoView(frameWidth: 125)
                     .shadow(radius: 10)
                 Spacer()
+                Text("a mindful time management tool for")
+                Text("Agile Coach")
+                Image("success-work-2")
+                    .resizable()
+                    .scaledToFit()
+                Text("great day to for...")
+                Text("better to avoid...")
+                Spacer()
             }
         }
         .sheet(isPresented: $viewModel.isShowingOnboardView, onDismiss: viewModel.checkIfLocationServicesIsEnabled) {

@@ -60,6 +60,19 @@ final class ActivityForTheDayViewModel: NSObject, ObservableObject {
         }
     }
     
+    func getMoonRecord(for locationManager: LocationManager) {
+        CloudKitManager.shared.getLocations { [self] result in
+            DispatchQueue.main.async {
+                switch result {
+                    case .success(let locations):
+                        locationManager.locations = locations
+                    case .failure(_):
+                        alertItem = AlertContext.unableToGetMoons
+                }
+            }
+        }
+    }
+    
     func getLocations(for locationManager: LocationManager) {
         CloudKitManager.shared.getLocations { [self] result in
             DispatchQueue.main.async {

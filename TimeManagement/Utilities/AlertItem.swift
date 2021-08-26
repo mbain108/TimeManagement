@@ -34,6 +34,11 @@ struct AlertContext {
                                                 message: Text("Your phone's location services are disabled. To change that go to your phone's Settings > Privacy > Location Services"),
                                                 dismissButton: .default(Text("Ok")))
     
+    //MARK: - Activity Of The Day Errors
+    static let unableToGetMoons = AlertItem(title: Text("Activity of the day Error"),
+                                                message: Text("Unable to retrieve 'activity of the day' data at this time.\nPlease try again."),
+                                                dismissButton: .default(Text("Ok")))
+    
     //MARK: - ProfileView Errors
     static let invalidProfile       = AlertItem(title: Text("Invalid Profile"),
                                                 message: Text("All fields are required as well as a profile photo. Your bio must be < 100 characters.\nPlease try again."),
