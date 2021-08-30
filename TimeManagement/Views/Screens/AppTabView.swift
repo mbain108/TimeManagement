@@ -28,7 +28,9 @@ struct AppTabView: View {
                 Label("Profile", systemImage: "person")
             }
         }
+        // This will need to be replicated to grab the Moon/Activity of the Day information
         .onAppear { CloudKitManager.shared.getUserRecord() }
+        
         .accentColor(.brandPrimary)
     }
 }

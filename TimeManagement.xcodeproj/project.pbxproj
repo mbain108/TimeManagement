@@ -95,6 +95,7 @@
 		1B2AE93F26B89BDF00678DC3 /* AlertItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertItem.swift; sourceTree = "<group>"; };
 		1B2AE94226B8A40B00678DC3 /* ActivityForTheDayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityForTheDayViewModel.swift; sourceTree = "<group>"; };
 		1B2AE94526B8ACC100678DC3 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		1B676CD826D80A8C00D813C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		1BC339C626BADF1D0015D827 /* CKAsset+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CKAsset+Ext.swift"; sourceTree = "<group>"; };
 		1BC339C826BADF370015D827 /* UIImage+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Ext.swift"; sourceTree = "<group>"; };
 		1BC339CA26BADF810015D827 /* raeLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = raeLocation.swift; sourceTree = "<group>"; };
@@ -157,6 +158,7 @@
 		1B1706E326A71D8F00BAFCD0 /* TimeManagement */ = {
 			isa = PBXGroup;
 			children = (
+				1B676CD826D80A8C00D813C7 /* Info.plist */,
 				1B2AE93826B893B500678DC3 /* Utilities */,
 				1B2AE8AE26B829BE00678DC3 /* Model */,
 				1B2AE8B026B82A3100678DC3 /* Views */,
@@ -650,6 +652,8 @@
 				DEVELOPMENT_TEAM = JZ9G56K487;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TimeManagement/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Rae Mindful tool for Time Management uses your location to...";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -681,6 +685,8 @@
 				DEVELOPMENT_TEAM = JZ9G56K487;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TimeManagement/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Rae Mindful tool for Time Management uses your location to...";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
