@@ -30,7 +30,7 @@ struct ProfileView: View {
                         VStack(spacing: 1) {
                             TextField("First Name", text: $viewModel.firstName).profileNameStyle()
                             TextField("Last Name", text: $viewModel.lastName).profileNameStyle()
-                            //TextField("Company Name", text: $viewModel.companyName)
+                            TextField("Company Name", text: $viewModel.companyName)
                         }
                         .padding(.trailing, 16)
                         
@@ -51,9 +51,9 @@ struct ProfileView: View {
                 Spacer()
                 
                 Button {
-                    viewModel.createProfile()
+                    viewModel.profileContext == .create ? viewModel.createProfile() : viewModel.updateProfile()
                 } label: {
-                    raeButton(title: "Create Profile")
+                    raeButton(title:viewModel.profileContext == .create ? "Create Profile" : "Update Profile")
                 }
                 .padding(.bottom)
             }

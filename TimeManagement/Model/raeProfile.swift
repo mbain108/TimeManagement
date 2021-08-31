@@ -13,6 +13,7 @@ struct raeProfile {
     
     static let kFirstName   = "firstName"
     static let kLastName    = "lastName"
+    static let kCompanyName = "companyName"
     static let kBio         = "bio"
     static let kAvatar      = "avatar"
     static let kIsCheckedIn = "isCheckedIn"
@@ -20,6 +21,7 @@ struct raeProfile {
     let ckRecordID: CKRecord.ID
     let firstName: String
     let lastName: String
+    let companyName: String
     let bio: String
     let avatar: CKAsset!
     let isCheckedIn: CKRecord.Reference? = nil
@@ -28,6 +30,7 @@ struct raeProfile {
         ckRecordID  = record.recordID
         firstName   = record[raeProfile.kFirstName] as? String ?? "N/A"
         lastName    = record[raeProfile.kLastName] as? String ?? "N/A"
+        companyName = record[raeProfile.kCompanyName] as? String ?? "N/A"
         bio         = record[raeProfile.kBio] as? String ?? "N/A"
         avatar      = record[raeProfile.kAvatar] as? CKAsset
     }

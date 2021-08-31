@@ -8,22 +8,29 @@
 
 import CloudKit
 
+enum ProfileContext { case create, update }
+
 final class ProfileViewModel: ObservableObject {
     
-    @Published var firstName    = ""
-    @Published var lastName     = ""
-    //@Published var companyName  = ""
-    @Published var bio          = ""
-    @Published var avatar       = PlaceholderImage.avatar
+    @Published var firstName            = ""
+    @Published var lastName             = ""
+    @Published var companyName          = ""
+    @Published var bio                  = ""
+    @Published var avatar               = PlaceholderImage.avatar
     @Published var isShowingPhotoPicker = false
-    @Published var isLoading = false
+    @Published var isLoading            = false
     @Published var alertItem: AlertItem?
+    
+    private var existingProfileRecord: CKRecord? {
+        didSet { profileContext = .update }
+    }
+    var profileContext: ProfileContext = .create
     
     func isValidProfile() -> Bool {
         
         guard !firstName.isEmpty,
               !lastName.isEmpty,
-              //!companyName.isEmpty,
+              !companyName.isEmpty,
               !bio.isEmpty,
               avatar != PlaceholderImage.avatar,
               bio.count <= 100 else { return false }
@@ -51,7 +58,11 @@ final class ProfileViewModel: ObservableObject {
                 hideLoadingView()
                 
                 switch result {
-                    case .success(_):
+                    case .success(let records):
+                    for record in records where record.recordType == RecordType.profile {
+                        existingProfileRecord = record
+                    }
+                    
                         alertItem = AlertContext.createProfileSuccess
                     case .failure(_):
                         alertItem = AlertContext.createProfileFailure
@@ -78,10 +89,12 @@ final class ProfileViewModel: ObservableObject {
                 hideLoadingView()
                 switch result {
                     case .success(let record):
+                        existingProfileRecord = record
+                    
                         let profile = raeProfile(record: record)
                         firstName   = profile.firstName
                         lastName    = profile.lastName
-                        //companyName = profile.companyName
+                        companyName = profile.companyName
                         bio         = profile.bio
                         avatar      = profile.createAvatarImage()
                         
@@ -93,11 +106,44 @@ final class ProfileViewModel: ObservableObject {
         }
     }
     
+    func updateProfile() {
+        guard isValidProfile() else {
+            alertItem = AlertContext.invalidProfile
+            return
+        }
+        
+        guard let profileRecord = existingProfileRecord else {
+            alertItem = AlertContext.unableToGetProfile
+            return
+        }
+        
+        profileRecord[raeProfile.kFirstName]    = firstName
+        profileRecord[raeProfile.kLastName]     = lastName
+        profileRecord[raeProfile.kCompanyName]  = companyName
+        profileRecord[raeProfile.kBio]          = bio
+        profileRecord[raeProfile.kAvatar]       = avatar.convertToCKAsset()
+        
+        showLoadingView()
+        
+        CloudKitManager.shared.save(record: profileRecord) { result in
+            DispatchQueue.main.async { [self] in
+                hideLoadingView()
+                
+                switch result {
+                    case .success(_):
+                        alertItem = AlertContext.updateProfileSuccess
+                    case .failure(_):
+                        alertItem = AlertContext.updateProfileFailure
+                }
+            }
+        }
+    }
+    
     private func createProfileRecord() -> CKRecord {
         let profileRecord = CKRecord(recordType: RecordType.profile)
         profileRecord[raeProfile.kFirstName]    = firstName
         profileRecord[raeProfile.kLastName]     = lastName
-        //profileRecord[raeProfile.kCompanyName]  = companyName
+        profileRecord[raeProfile.kCompanyName]  = companyName
         profileRecord[raeProfile.kBio]          = bio
         profileRecord[raeProfile.kAvatar]       = avatar.convertToCKAsset()
         
