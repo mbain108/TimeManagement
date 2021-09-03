@@ -1,8 +1,9 @@
 //
 //  Persistence.swift
-//  TimeManagement
+//  Rae Time Management
 //
 //  Created by Melissa Bain on 7/20/21.
+//  Copyright © 2021 MB Consulting. All rights reserved.
 //
 
 import CoreData

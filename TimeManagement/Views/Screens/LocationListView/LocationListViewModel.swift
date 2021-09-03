@@ -1,6 +1,6 @@
 //
 //  LocationListViewModel.swift
-//  LocationListViewModel
+//  Rae Time Management
 //
 //  Created by Melissa Bain on 9/3/21.
 //  Copyright © 2021 MB Consulting. All rights reserved.
