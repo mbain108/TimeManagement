@@ -9,7 +9,6 @@
 import CloudKit
 
 extension CKRecord {
-    
     func convertToraeLocation() -> raeLocation { raeLocation(record: self) }
     func convertToraeMoon() -> raeMoon { raeMoon(record: self) }
     func convertToraeProfile() -> raeProfile { raeProfile(record: self) }

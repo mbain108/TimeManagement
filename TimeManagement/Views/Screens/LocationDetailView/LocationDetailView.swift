@@ -41,15 +41,16 @@ struct LocationDetailView: View {
                             LocationActionButton(color: .brandPrimary, imageName: "network")
                         })
                         
-                        Button {
-                            viewModel.callLocation()
-                        } label: {
+                        Button { viewModel.callLocation() } label: {
                             LocationActionButton(color: .brandPrimary, imageName: "phone.fill")
                         }
-                        Button {
-                            
-                        } label: {
-                            LocationActionButton(color: .brandPrimary, imageName: "person.fill.checkmark")
+                        if let _ = CloudKitManager.shared.profileRecordID {
+                            Button {
+                                viewModel.updateCheckInStatus(to: viewModel.isCheckedIn ? .checkedOut : .checkedIn)
+                            } label: {
+                                LocationActionButton(color: viewModel.isCheckedIn ? .grubRed : .brandPrimary,
+                                                     imageName: viewModel.isCheckedIn ? "person.fill.xmark" : "person.fill.checkmark")
+                            }
                         }
                     }
                 }
@@ -59,13 +60,27 @@ struct LocationDetailView: View {
                     .bold()
                     .font(.title2)
                 
-                ScrollView {
-                    LazyVGrid(columns: viewModel.columns, content: {
-                        FirstNameAvatarView(image: PlaceholderImage.avatar, firstName: "Me")
-                            .onTapGesture {
-                                viewModel.isShowingProfileModal = true
-                            }
-                    })
+                ZStack {
+                    if viewModel.checkedInProfiles.isEmpty {
+                        Text("Nobody's here 🙁")
+                            .bold()
+                            .font(.title2)
+                            .foregroundColor(.secondary)
+                            .padding(.top, 30)
+                    } else {
+                        ScrollView {
+                            LazyVGrid(columns: viewModel.columns, content: {
+                                ForEach(viewModel.checkedInProfiles) { profile in
+                                    FirstNameAvatarView(profile: profile)
+                                        .onTapGesture {
+                                            viewModel.isShowingProfileModal = true
+                                        }
+                                }
+                            })
+                        }
+                    }
+                    
+                    if viewModel.isLoading { LoadingView() }
                 }
                 Spacer()
             }
@@ -74,17 +89,18 @@ struct LocationDetailView: View {
                 Color(.systemBackground)
                     .ignoresSafeArea()
                     .opacity(0.9)
-                    //.transition(.opacity)
-                    //.animation(.easeOut)
                     .transition(AnyTransition.opacity.animation(.easeOut(duration: 0.35)))
                     .zIndex(1)
-                
                 
                 ProfileModalView(isShowingProfileModal: $viewModel.isShowingProfileModal, profile: raeProfile(record: MockData.profile))
                     .transition(.opacity.combined(with: .slide))
                     .animation(.easeOut)
                     .zIndex(2)
             }
+        }
+        .onAppear {
+            viewModel.getCheckedInProfiles()
+            viewModel.getCheckedInStatus()
         }
         .alert(item: $viewModel.alertItem, content: { alertItem in
             Alert(title: alertItem.title, message: alertItem.message, dismissButton: alertItem.dismissButton)
@@ -118,21 +134,19 @@ struct LocationActionButton: View {
                 .scaledToFit()
                 .foregroundColor(.white)
                 .frame(width: 22, height: 22)
-            
         }
     }
 }
 
 struct FirstNameAvatarView: View {
     
-    var image: UIImage
-    var firstName: String
+    var profile: raeProfile
     
     var body: some View {
         VStack {
-            AvatarView(image: image, size: 64)
+            AvatarView(image: profile.createAvatarImage(), size: 64)
             
-            Text(firstName)
+            Text(profile.firstName)
                 .bold()
                 .lineLimit(1)
                 .minimumScaleFactor(0.75)

@@ -44,6 +44,7 @@ struct raeMoon: Identifiable {
         agileAsset          = record[raeMoon.kAgileAsset] as? CKAsset
     }
     
+    
     func createAgileImage() -> UIImage {
         guard let asset = agileAsset else { return PlaceholderImage.banner }
         return asset.convertToUIImage(in: .banner)
