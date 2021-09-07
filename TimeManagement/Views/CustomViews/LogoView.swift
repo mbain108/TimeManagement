@@ -13,7 +13,7 @@ struct LogoView: View {
     var frameWidth: CGFloat
     
     var body: some View {
-        Image("rae-map-logo")
+        Image(decorative: "rae-map-logo")
             .resizable()
             .scaledToFit()
             .frame(width: frameWidth)

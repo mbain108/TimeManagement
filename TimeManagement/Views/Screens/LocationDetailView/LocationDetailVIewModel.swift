@@ -16,17 +16,21 @@ final class LocationDetailViewModel: ObservableObject {
     
     @Published var checkedInProfiles: [raeProfile] = []
     @Published var isShowingProfileModal = false
+    @Published var isShowingProfileSheet = false
     @Published var isCheckedIn = false
     @Published var isLoading =  false
     @Published var alertItem: AlertItem?
     
-    let columns = [GridItem(.flexible()),
-                   GridItem(.flexible()),
-                   GridItem(.flexible())]
-    
     var location: raeLocation
+    var selectedProfile: raeProfile?
     
     init(location: raeLocation) { self.location = location }
+    
+    
+    func determineColumns(for sizeCategory: ContentSizeCategory) -> [GridItem] {
+        let numberOfColumns = sizeCategory >= .accessibilityMedium ? 1 : 3
+        return Array(repeating: GridItem(.flexible()), count: numberOfColumns)
+    }
     
     
     func getDirectionsToLocation() {
@@ -126,6 +130,17 @@ final class LocationDetailViewModel: ObservableObject {
             }
         }
     }
+    
+    
+    func show(profile: raeProfile, in sizeCategory: ContentSizeCategory) {
+        selectedProfile = profile
+        if sizeCategory >= .accessibilityMedium {
+            isShowingProfileSheet = true
+        } else {
+            isShowingProfileModal = true
+        }
+    }
+    
     
     private func showLoadingView() { isLoading = true }
     private func hideLoadingView() { isLoading = false }

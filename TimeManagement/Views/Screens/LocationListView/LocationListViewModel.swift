@@ -7,6 +7,7 @@
 //
 
 import CloudKit
+import SwiftUI
 
 final class LocationListViewModel: ObservableObject {
     
@@ -23,6 +24,23 @@ final class LocationListViewModel: ObservableObject {
                         print("Error getting back dictionary")
                 }
             }
+        }
+    }
+    
+    
+    func createVoiceOverSummary(for location: raeLocation) -> String {
+        let count = checkedInProfiles[location.id, default: []].count
+        let personPlurality = count == 1 ? "person" : "people"
+        
+        return "\(location.name) \(count) \(personPlurality) checked in."
+    }
+    
+    
+    @ViewBuilder func createLocationDetailView(for location: raeLocation, in sizeCategory: ContentSizeCategory) -> some View {
+        if sizeCategory >= .accessibilityMedium {
+            LocationDetailView(viewModel: LocationDetailViewModel(location: location)).embedInScrollView()
+        } else {
+            LocationDetailView(viewModel: LocationDetailViewModel(location: location))
         }
     }
 }

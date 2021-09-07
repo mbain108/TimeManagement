@@ -48,6 +48,7 @@
 		1BDD056C26DE63FA00B54CA0 /* ProfileModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDD056B26DE63FA00B54CA0 /* ProfileModalView.swift */; };
 		1BDD056F26E2744B00B54CA0 /* LocationListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDD056E26E2744B00B54CA0 /* LocationListViewModel.swift */; };
 		1BDD057226E28D5B00B54CA0 /* AppTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDD057126E28D5B00B54CA0 /* AppTabViewModel.swift */; };
+		1BE0FC0026E7D41C00606856 /* ProfileSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE0FBFF26E7D41C00606856 /* ProfileSheetView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +115,7 @@
 		1BDD056B26DE63FA00B54CA0 /* ProfileModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModalView.swift; sourceTree = "<group>"; };
 		1BDD056E26E2744B00B54CA0 /* LocationListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationListViewModel.swift; sourceTree = "<group>"; };
 		1BDD057126E28D5B00B54CA0 /* AppTabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabViewModel.swift; sourceTree = "<group>"; };
+		1BE0FBFF26E7D41C00606856 /* ProfileSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSheetView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -289,6 +291,7 @@
 				1BB1118226DE56D8001B6DC8 /* LocationDetailViewModel.swift */,
 				1B276F9E26B72CC0000DE2DA /* LocationDetailView.swift */,
 				1BDD056B26DE63FA00B54CA0 /* ProfileModalView.swift */,
+				1BE0FBFF26E7D41C00606856 /* ProfileSheetView.swift */,
 			);
 			path = LocationDetailView;
 			sourceTree = "<group>";
@@ -520,6 +523,7 @@
 				1BDD056C26DE63FA00B54CA0 /* ProfileModalView.swift in Sources */,
 				1BC339D426BAE0540015D827 /* AvatarView.swift in Sources */,
 				1BC339DC26BAE0ED0015D827 /* raeButton.swift in Sources */,
+				1BE0FC0026E7D41C00606856 /* ProfileSheetView.swift in Sources */,
 				1BC339C726BADF1D0015D827 /* CKAsset+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -688,7 +692,6 @@
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Rae Mindful tool for Time Management uses your location to...";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -721,7 +724,6 @@
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Rae Mindful tool for Time Management uses your location to...";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
